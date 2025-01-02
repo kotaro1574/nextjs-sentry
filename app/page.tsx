@@ -17,13 +17,8 @@ export default function IndexPage() {
         </p>
       </div>
       <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
+        <Link href={"/sentry-example-page"} className={buttonVariants()}>
+          sentry-example-page
         </Link>
         <Link
           target="_blank"
