@@ -20,12 +20,6 @@ export default function IndexPage() {
         <Link href={"/sentry-example-page"} className={buttonVariants()}>
           sentry-example-page
         </Link>
-        <Link
-          href={"/sentry-example-server-action-page"}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          sentry-example-server-action-page
-        </Link>
       </div>
     </section>
   )
