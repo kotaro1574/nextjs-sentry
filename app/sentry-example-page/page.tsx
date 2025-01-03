@@ -1,6 +1,7 @@
 "use client"
 
 import Head from "next/head"
+import { ErrorTest } from "@/action/error-test"
 import * as Sentry from "@sentry/nextjs"
 
 export default function Page() {
@@ -64,6 +65,25 @@ export default function Page() {
           }}
         >
           エラーを投げる！
+        </button>
+
+        <button
+          type="button"
+          style={{
+            padding: "12px",
+            cursor: "pointer",
+            backgroundColor: "#AD6CAA",
+            borderRadius: "4px",
+            border: "none",
+            color: "white",
+            fontSize: "14px",
+            margin: "18px",
+          }}
+          onClick={async () => {
+            await ErrorTest()
+          }}
+        >
+          Error Test
         </button>
 
         <p>

@@ -5,6 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     appDir: true,
+    serverActions: true,
   },
 }
 
@@ -13,7 +14,7 @@ export default withSentryConfig(nextConfig, {
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
   org: "vibes-hiroshima",
-  project: "javascript-nextjs",
+  project: "nextjs-sentry",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,

@@ -21,12 +21,10 @@ export default function IndexPage() {
           sentry-example-page
         </Link>
         <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
+          href={"/sentry-example-server-action-page"}
           className={buttonVariants({ variant: "outline" })}
         >
-          GitHub
+          sentry-example-server-action-page
         </Link>
       </div>
     </section>
